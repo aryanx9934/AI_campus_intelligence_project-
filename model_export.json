@@ -1,0 +1,199 @@
+{
+  "at_risk_model": {
+    "label": "At-Risk",
+    "features": [
+      "attendance_pct",
+      "cgpa",
+      "backlog_count",
+      "coding_score",
+      "aptitude_score",
+      "communication_score",
+      "extracurricular_score",
+      "internship_count",
+      "projects_count"
+    ],
+    "scaler_mean": [
+      80.875561,
+      7.137018,
+      1.733184,
+      63.788789,
+      59.978924,
+      63.802354,
+      48.917265,
+      1.724215,
+      2.426009
+    ],
+    "scaler_scale": [
+      8.727679,
+      1.27134,
+      1.475699,
+      14.780409,
+      14.895029,
+      14.798941,
+      21.821964,
+      1.232117,
+      1.588254
+    ],
+    "coefficients": [
+      -1.348413,
+      -1.266187,
+      1.493949,
+      -0.607666,
+      0.064359,
+      0.195679,
+      0.270466,
+      0.483583,
+      -0.032621
+    ],
+    "intercept": -3.643422,
+    "metrics": {
+      "logistic_regression": {
+        "accuracy": 0.913,
+        "precision": 0.857,
+        "recall": 0.643,
+        "f1": 0.735,
+        "roc_auc": 0.957
+      },
+      "random_forest": {
+        "accuracy": 0.926,
+        "precision": 0.905,
+        "recall": 0.679,
+        "f1": 0.776,
+        "roc_auc": 0.957
+      }
+    },
+    "feature_importance": {
+      "cgpa": 0.311,
+      "attendance_pct": 0.206,
+      "backlog_count": 0.15,
+      "coding_score": 0.143,
+      "aptitude_score": 0.054,
+      "communication_score": 0.052,
+      "extracurricular_score": 0.045,
+      "internship_count": 0.019,
+      "projects_count": 0.019
+    }
+  },
+  "placement_model": {
+    "label": "Placement",
+    "features": [
+      "attendance_pct",
+      "cgpa",
+      "backlog_count",
+      "coding_score",
+      "aptitude_score",
+      "communication_score",
+      "extracurricular_score",
+      "internship_count",
+      "projects_count"
+    ],
+    "scaler_mean": [
+      80.78565,
+      7.117534,
+      1.690583,
+      64.044619,
+      60.129148,
+      64.039462,
+      48.932511,
+      1.674888,
+      2.441704
+    ],
+    "scaler_scale": [
+      8.686494,
+      1.241628,
+      1.462,
+      15.229887,
+      14.982862,
+      14.844586,
+      21.306797,
+      1.231007,
+      1.56043
+    ],
+    "coefficients": [
+      -0.017986,
+      1.003053,
+      -1.567605,
+      1.261219,
+      0.475873,
+      0.459682,
+      -0.327569,
+      1.016312,
+      0.643579
+    ],
+    "intercept": 1.88345,
+    "metrics": {
+      "logistic_regression": {
+        "accuracy": 0.832,
+        "precision": 0.879,
+        "recall": 0.87,
+        "f1": 0.874,
+        "roc_auc": 0.925
+      },
+      "random_forest": {
+        "accuracy": 0.819,
+        "precision": 0.848,
+        "recall": 0.89,
+        "f1": 0.868,
+        "roc_auc": 0.9
+      }
+    },
+    "feature_importance": {
+      "cgpa": 0.305,
+      "coding_score": 0.169,
+      "backlog_count": 0.134,
+      "aptitude_score": 0.112,
+      "attendance_pct": 0.085,
+      "internship_count": 0.06,
+      "communication_score": 0.053,
+      "extracurricular_score": 0.051,
+      "projects_count": 0.03
+    }
+  },
+  "feature_ranges": {
+    "attendance_pct": {
+      "min": 50.2,
+      "max": 100.0,
+      "mean": 80.8
+    },
+    "cgpa": {
+      "min": 4.0,
+      "max": 10.0,
+      "mean": 7.1
+    },
+    "backlog_count": {
+      "min": 0.0,
+      "max": 7.0,
+      "mean": 1.7
+    },
+    "coding_score": {
+      "min": 19.2,
+      "max": 100.0,
+      "mean": 63.8
+    },
+    "aptitude_score": {
+      "min": 18.6,
+      "max": 100.0,
+      "mean": 60.5
+    },
+    "communication_score": {
+      "min": 11.3,
+      "max": 100.0,
+      "mean": 63.8
+    },
+    "extracurricular_score": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 49.1
+    },
+    "internship_count": {
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 1.7
+    },
+    "projects_count": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 2.4
+    }
+  }
+}
