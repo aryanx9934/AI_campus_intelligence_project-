@@ -113,7 +113,7 @@ The completed project will provide an integrated view of student academic perfor
 
 ## 👨‍💻 Author
 
-**Aryan Raj**
+**Aryan **
 
 Aspiring Data Analyst | Python | SQL | Power BI | Excel | Data Visualization
 
